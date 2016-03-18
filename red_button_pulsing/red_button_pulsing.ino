@@ -1,3 +1,5 @@
+#include <Keyboard.h>
+
 // constants won't change. They're used here to set pin numbers & delay countern:
 const int buttonPin = 2;           // the number of the pushbutton pin
 const int ledPin =  13;            // the number of the LED pin
@@ -33,7 +35,7 @@ void loop(){
       if (activated && buttonState == HIGH) {
       
         // send hotkey to PC
-        Keyboard.press("N");
+        Keyboard.press('n');
         delay(100);
         Keyboard.releaseAll();   
         
